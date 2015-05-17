@@ -69,9 +69,9 @@
 }
 
 #box-container > #box {
-  width: 100px;
-  height: 100px;
-  background-color: #981b1b;
+  width: 80px;
+  height: 80px;
+  background-color: #24569b;
   
   -webkit-border-radius: 100px;
      -moz-border-radius: 100px;
