@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+#container {
+  height: 100%;
+  
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  
+  -webkit-align-items: center;
+     -moz-align-items: center;
+      -ms-align-items: center;
+          align-items: center;
+  
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+      -ms-justify-content: center;
+          justify-content: center;
+}
+
+#canvas {
+  border-right: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+#box-container {
+  position: relative;
+  width: 33.3%;
+  height: 100%;
+  
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-align-items: center;
+   -moz-align-items: center;
+    -ms-align-items: center;
+        align-items: center;
+  
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+      -ms-justify-content: center;
+          justify-content: center;
+}
+
+#box-container > #instructions {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 24px;
+  box-sizing: border-box;
+  
+  font-family: 'clavo', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#box-container > #box {
+  width: 100px;
+  height: 100px;
+  background-color: #981b1b;
+  
+  -webkit-border-radius: 100px;
+     -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+       -o-border-radius: 100px;
+          border-radius: 100px;
+  
+  -webkit-animation-name: curvier;
+     -moz-animation-name: curvier;
+      -ms-animation-name: curvier;
+       -o-animation-name: curvier;
+          animation-name: curvier;
+  
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#code {
+  width: 33.3%;
+  height: 100%;
+  overflow: scroll;
+  border-left: solid 1px rgba(0, 0, 0, 0.11);
+  
+  padding: 11px;
+  box-sizing: border-box;
+  font-size: 11px;
+}
