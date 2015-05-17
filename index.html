@@ -15,5 +15,13 @@
       <pre id="code"></pre>
     </div>
     <script type="text/javascript" src="curvier.js"></script>
+    <script type="text/javascript" src="http://ofagbemi.github.io/pencil.js/pencil.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        var canvas = document.getElementById('canvas');
+        var pencil = new Pencil(canvas, {pixelSize: 1, color: '#24569b'});
+        canvas.addEventListener('mousedown', function() {pencil.clear();});
+      })();
+    </script>
   </body>
 </html>
