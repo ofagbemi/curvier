@@ -140,14 +140,13 @@
     
     // now attach each prefix to each of the rules and add them
     // to the list of keyframes rules
-    var keyframes = [];
-    prefixes.map(function(prefix) {
+    var keyframes = prefixes.map(function(prefix) {
       var keyframeRule = '@' + prefix + 'keyframes ' + keyframesName + '{\n' +
         transforms.map(function(transform) {
           return '  ' + transform.percent + '{' + 
             prefix + transform.rule + ';}';
         }).join('\n') + '\n}';
-      keyframes.push(keyframeRule);
+      return keyframeRule;
     });
     
     return keyframes;
